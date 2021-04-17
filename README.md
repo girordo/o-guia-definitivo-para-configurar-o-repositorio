@@ -24,7 +24,7 @@ Tabela de conteúdos
 $ git clone 
 
 # Entre na pasta
-$ cd caash-beneficiario-mobile
+$ cd 
 
 # Executar o projeto
 $ yarn start
