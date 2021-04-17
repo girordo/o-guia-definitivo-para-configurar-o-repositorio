@@ -163,6 +163,38 @@ E muito provavelmente ele ficará assim:
   },
 ```
 
+Para configurar o Husky devemos criar uma pasta na raiz do repositório:
+
+```bash
+$ mkdir .husky
+```
+
+E dentro dessa pasta dois novos arquivos
+
+```bash
+
+$ cd .husky
+
+$ touch .gitignore pre-commit
+
+```
+
+Dentro do arquivo .gitignore insira:
+
+```gitignore
+_
+```
+
+E dentro do arquivo pre-commit insira:
+
+```sh
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+yarn lint
+```
+
 Por último vamos configurar o Docker partindo do pressuposto que você já saiba o que é Docker, se não sabe não tem
 problema, volte duas casas.
 
