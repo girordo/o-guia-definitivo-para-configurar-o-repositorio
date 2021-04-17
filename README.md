@@ -58,7 +58,7 @@ Com o projeto rodando vamos configurar agora o ESLint, Prettier, EditorConfig e 
 ```bash
 
 # Instalando o eslint, prettier e plugins
-$  yarn add eslint prettier eslint-plugin-react eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier eslint-plugin-jsx-a11y
+$  yarn add -D eslint prettier eslint-plugin-react eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier eslint-plugin-jsx-a11y husky
 
 # Criando arquivos ignore
 $ touch .eslintignore .prettierignore
@@ -74,10 +74,10 @@ build/
 
 ```
 
-Crie os arquivos .eslintrc e .prettierrc
+Crie os arquivos .eslintrc, .prettierrc e .editorconfig
 
 ```bash
-touch .eslintrc .prettierrc
+touch .eslintrc .prettierrc .editorconfig
 ```
 
 Dentro do arquivo .prettierrc insira:
@@ -125,6 +125,20 @@ module.exports = {
     "prettier/prettier": ["error", {}, { usePrettierrc: true }],
   },
 };
+```
+
+Dentro do arquivo .editorconfig insira:
+
+```bash
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
 ```
 
 Por último vamos configurar o Docker partindo do pressuposto que você já saiba o que é Docker, se não sabe não tem
