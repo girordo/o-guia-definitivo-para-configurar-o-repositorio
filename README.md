@@ -12,10 +12,10 @@
 - [Abstract](#abstract)
 - [Tecnologias](#Tecnologias)
 - [Requisitos mínimos](#abstract)
-- [Como usar](#como-usar)
+- [O guia](#o-guia)
 <!--te-->
 
-### Abstract
+## Abstract
 
 Resolvi fazer esse guia pois tô cansado de toda vez que vou começar um projeto(não uso boilerplate) ter que ficar
 garimpando todos os guias que conheço para deixar pronto, então farei tudo num único, espero que seja de ajuda a alguém!
@@ -36,11 +36,16 @@ Primeiramente segundamente, você deve ter o Node instalado de preferência com 
 Você deve ter instalado o [CRA](https://create-react-app.dev/docs/getting-started/) e o
 [Docker](https://docs.docker.com/)(essa parte não vou explicar pois a documentação de ambos é bem completa).
 
-### Como usar
+### O guia
+
+Depois que você possuir tudo instalado que eu citei acima vamos as configurações:
 
 ```bash
 
-# Clone o repositório
-$ git clone
+# Rode o CRA
+$ create react-app meu-primeiro-repositorio-configurado
+
+# Entre na pasta criada pelo CRA
+$ cd meu-primeiro-repositorio-configurado
 
 ```
