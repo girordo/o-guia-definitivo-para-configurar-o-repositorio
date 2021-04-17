@@ -9,7 +9,6 @@
 
 <!--ts-->
 
-- [Tabela de conteúdo](#tabela-de-conteudo)
 - [Abstract](#abstract)
 - [Tecnologias](#Tecnologias)
 - [Requisitos mínimos](#abstract)
