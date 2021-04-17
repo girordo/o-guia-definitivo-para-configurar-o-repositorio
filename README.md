@@ -141,6 +141,28 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 ```
 
+E agora vamos inserir dentro de scripts no package.json:
+
+```js
+    "lint": "prettier --check . && eslint --ignore-path .gitignore .",
+    "lint-fix": "eslint --fix .",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+```
+
+E muito provavelmente ele ficará assim:
+
+```js
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "prettier --check . && eslint --ignore-path .gitignore .",
+    "lint-fix": "eslint --fix .",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+  },
+```
+
 Por último vamos configurar o Docker partindo do pressuposto que você já saiba o que é Docker, se não sabe não tem
 problema, volte duas casas.
 
