@@ -74,6 +74,12 @@ build/
 
 ```
 
+Crie os arquivos .eslintrc e .prettierrc
+
+```bash
+touch .eslintrc .prettierrc
+```
+
 Dentro do arquivo .prettierrc insira:
 
 ```js
