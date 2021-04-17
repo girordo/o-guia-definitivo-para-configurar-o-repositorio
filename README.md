@@ -26,8 +26,8 @@ garimpando todos os guias que conheço para deixar pronto, então farei tudo num
 - [CRA](https://create-react-app.dev/)
 - <img src="https://github.com/girordo/geticon/blob/master/logos/eslint.svg" alt="ESLint" width="28px" height="28px"/>
 - <img src="https://github.com/girordo/geticon/blob/master/logos/prettier.svg" alt="Prettier" width="28px" height="28px"/>
-- [EditorConfig](https://editorconfig.org/)
-- <img src="https://www.pngjoy.com/pngl/15/407979_emojis-wolf-emoji-png-transparent-png.png" alt="Husky" width="28px" height="28px"/>
+- <img src="https://editorconfig.org/logo.png" alt="EditorConfig" width="28px" height="28px">
+- <img src="https://www.pinclipart.com/picdir/big/565-5651740_wolf-emoji-clipart-wolf-emoji-transparent-background-png.png" alt="Husky" width="28px" height="28px"/>
 - <img src="https://github.com/girordo/geticon/blob/master/logos/docker-icon.svg" alt="Docker" width="28px" height="28px"/>
 
 ### Requisitos mínimos
