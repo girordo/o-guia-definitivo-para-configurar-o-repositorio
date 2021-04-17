@@ -22,11 +22,13 @@ garimpando todos os guias que conheço para deixar pronto, então farei tudo num
 
 ### Tecnologias
 
-- [React](https://pt-br.reactjs.org/)<img src="https://github.com/girordo/geticon/blob/master/logos/react.svg" alt="React" width="28px" height="28px">
+- <img src="https://github.com/girordo/geticon/blob/master/logos/react.svg" alt="React" width="28px" height="28px">
 - [CRA](https://create-react-app.dev/)
-- [Eslint](https://eslint.org/)<img src="https://github.com/girordo/geticon/blob/master/logos/eslint.svg" alt="ESLint" width="28px" height="28px">, [Prettier](https://prettier.io/)<img src="https://github.com/girordo/geticon/blob/master/logos/prettier.svg" alt="Prettier" width="28px" height="28px">, [EditorConfig](https://editorconfig.org/)
+- <img src="https://github.com/girordo/geticon/blob/master/logos/eslint.svg" alt="ESLint" width="28px" height="28px">
+- <img src="https://github.com/girordo/geticon/blob/master/logos/prettier.svg" alt="Prettier" width="28px" height="28px">
+- [EditorConfig](https://editorconfig.org/)
 - [Husky](https://typicode.github.io/husky/)
-- [Docker](https://www.docker.com/)<img src="https://github.com/girordo/geticon/blob/master/logos/docker.svg" alt="Docker" width="28px" height="28px">
+- <img src="https://github.com/girordo/geticon/blob/master/logos/docker.svg" alt="Docker" width="28px" height="28px">
 
 ### Requisitos mínimos
 
