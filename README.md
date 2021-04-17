@@ -1,5 +1,5 @@
 <div align="center">
-
+<img src="https://github.com/girordo/o-guia-definitivo-para-configurar-o-repositorio/blob/main/assets/french-bulldog.png" loading=lazy width="20%" alt="French Bulldog Logo" />
 </div>
 <p>Todas as instruções que indico aqui são o que uso no meu dia como desenvolvedor</p>
 <h1 align="center">O GUIA DEFINITIVO PARA CONFIGURAR O REPOSITÓRIO</h1>
