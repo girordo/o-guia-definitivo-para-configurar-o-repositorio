@@ -1,7 +1,7 @@
 <div align="center">
 
 </div>
-
+<p>Todas as instruções que indico aqui são o que uso no meu dia como desenvolvedor</p>
 <h1 align="center">O GUIA DEFINITIVO PARA CONFIGURAR O REPOSITÓRIO</h1>
 
 # Tabela de conteúdos
@@ -23,7 +23,6 @@ garimpando todos os guias que conheço para deixar pronto, então farei tudo num
 ### Tecnologias
 
 - <img src="https://github.com/girordo/geticon/blob/master/logos/react.svg" alt="React" width="28px" height="28px"/> React
-- [CRA](https://create-react-app.dev/)
 - <img src="https://github.com/girordo/geticon/blob/master/logos/eslint.svg" alt="ESLint" width="28px" height="28px"/> ESLint
 - <img src="https://github.com/girordo/geticon/blob/master/logos/prettier.svg" alt="Prettier" width="28px" height="28px"/> Prettier
 - <img src="https://editorconfig.org/logo.png" alt="EditorConfig" width="28px" height="28px"> EditorConfig
