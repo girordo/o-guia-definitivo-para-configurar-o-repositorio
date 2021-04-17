@@ -65,10 +65,61 @@ $ touch .eslintignore .prettierignore
 
 ```
 
-Dentro de ambos arquivos ignore insira:
+Dentro de ambos arquivos .eslintignore e .prettierignore insira:
+
+```bash
 
 node_modules/
 build/
+
+```
+
+Dentro do arquivo .prettierrc insira:
+
+```js
+
+{
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "jsxBracketSameLine": true
+}
+
+```
+
+Dentro do arquivo .eslintrc insira:
+
+```js
+module.exports = {
+  root: true,
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+  env: {
+    browser: true,
+    amd: true,
+    node: true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+  ],
+  rules: {
+    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+  },
+};
+```
 
 Por último vamos configurar o Docker partindo do pressuposto que você já saiba o que é Docker, se não sabe não tem
 problema, volte duas casas.
