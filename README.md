@@ -207,10 +207,8 @@ $ touch Dockerfile .dockerignore
 No arquivo .dockerignore, insira:
 
 ```.dockerignore
-
 node_modules/
 build/
-
 ```
 
 Após criar o Dockerfile vamos configura-lo:
