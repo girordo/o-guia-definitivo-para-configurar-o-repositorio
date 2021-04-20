@@ -199,8 +199,17 @@ problema, volte duas casas.
 
 ```bash
 
-# Criando arquivo Dockerfile
-$ touch Dockerfile
+# Criando arquivo Dockerfile e .dockerignore
+$ touch Dockerfile .dockerignore
+
+```
+
+No arquivo .dockerignore, insira:
+
+```.dockerignore
+
+node_modules/
+build/
 
 ```
 
