@@ -194,6 +194,12 @@ E dentro do arquivo pre-commit insira:
 yarn lint
 ```
 
+Logo após rode o comando:
+
+```sh
+yarn husky install
+```
+
 Por último vamos configurar o Docker partindo do pressuposto que você já saiba o que é Docker, se não sabe não tem
 problema, volte duas casas.
 
