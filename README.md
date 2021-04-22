@@ -52,6 +52,8 @@ $ yarn start
 
 ```
 
+### Instalando as depedências necessárias
+
 Com o projeto rodando vamos configurar agora o ESLint, Prettier, EditorConfig e Husky:
 
 ```bash
@@ -64,6 +66,8 @@ $ touch .eslintignore .prettierignore
 
 ```
 
+### Populando os arquivos ignore
+
 Dentro de ambos arquivos .eslintignore e .prettierignore insira:
 
 ```bash
@@ -73,11 +77,15 @@ build/
 
 ```
 
+### Criando os arquivos de configuração do ESLint, Prettiere e EditorConfig
+
 Crie os arquivos .eslintrc, .prettierrc e .editorconfig
 
 ```bash
 touch .eslintrc .prettierrc .editorconfig
 ```
+
+### Populando o arquivo .prettierrc
 
 Dentro do arquivo .prettierrc insira:
 
@@ -91,6 +99,8 @@ Dentro do arquivo .prettierrc insira:
 }
 
 ```
+
+### Populando o .eslintrc
 
 Dentro do arquivo .eslintrc insira:
 
@@ -126,6 +136,8 @@ module.exports = {
 };
 ```
 
+### Populando o arquivo .editorconfig
+
 Dentro do arquivo .editorconfig insira:
 
 ```bash
@@ -139,6 +151,8 @@ charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = false
 ```
+
+### Configurando os scripts no package.json
 
 E agora vamos inserir dentro de scripts no package.json:
 
@@ -161,6 +175,8 @@ E muito provavelmente ele ficará assim:
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
 ```
+
+### Configurando Husky
 
 Para configurar o Husky devemos criar uma pasta na raiz do repositório:
 
@@ -199,6 +215,8 @@ Logo após rode o comando:
 ```sh
 yarn husky install
 ```
+
+### Configurando dockerfile e .dockerignore
 
 Por último vamos configurar o Docker partindo do pressuposto que você já saiba o que é Docker, se não sabe não tem
 problema, volte duas casas.
@@ -245,6 +263,8 @@ FROM nginx:stable
 COPY --from=builder /app/build /usr/share/nginx/html
 
 ```
+
+### "Buildando" e rodando o projeto
 
 Basicamente na configuração acima você está criando uma imagem do seu projeto para o container e servindo ela
 na porta 3000 com o nginx.
