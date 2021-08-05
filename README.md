@@ -15,6 +15,14 @@
 - [O guia](#o-guia)
 <!--te-->
 
+## Personal Note
+
+ - Consertar o Husky
+ - Adiciionar lintstaged
+ - Configurar novamente o Husky com lintstaged
+ - Configurar path mapping
+ - Configurar um com Typescript também
+
 ## Abstract
 
 Resolvi fazer esse guia pois tô cansado de toda vez que vou começar um projeto(não uso boilerplate) ter que ficar
