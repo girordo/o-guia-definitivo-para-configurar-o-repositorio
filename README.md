@@ -18,7 +18,7 @@
 ## Personal Note
 
  - Consertar o Husky
- - Adiciionar lintstaged
+ - Adicionar lintstaged
  - Configurar novamente o Husky com lintstaged
  - Configurar path mapping
  - Configurar um com Typescript também
