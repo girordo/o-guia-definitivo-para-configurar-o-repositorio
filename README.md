@@ -88,7 +88,7 @@ build/
 
 ### Criando os arquivos de configuração do ESLint, Prettiere e EditorConfig
 
-Crie os arquivos .eslintrc, .prettierrc e .editorconfig
+Crie os arquivos <kbd>.eslintrc</kbd>, <kbd>.prettierrc</kbd> e <kbd>.editorconfig</kbd>
 
 ```bash
 touch .eslintrc .prettierrc .editorconfig
@@ -96,7 +96,7 @@ touch .eslintrc .prettierrc .editorconfig
 
 ### Populando o arquivo .prettierrc
 
-Dentro do arquivo .prettierrc insira:
+Dentro do arquivo <kbd>.prettierrc</kbd> insira:
 
 ```js
 
@@ -111,7 +111,7 @@ Dentro do arquivo .prettierrc insira:
 
 ### Populando o .eslintrc
 
-Dentro do arquivo .eslintrc insira:
+Dentro do arquivo <kbd>.eslintrc</kbd> insira:
 
 ```js
 module.exports = {
@@ -147,7 +147,7 @@ module.exports = {
 
 ### Populando o arquivo .editorconfig
 
-Dentro do arquivo .editorconfig insira:
+Dentro do arquivo <kbd>.editorconfig</kbd> insira:
 
 ```bash
 root = true
@@ -163,7 +163,7 @@ insert_final_newline = false
 
 ### Configurando os scripts no package.json
 
-E agora vamos inserir dentro de scripts no package.json:
+E agora vamos inserir dentro de scripts no <kbd>package.json</kbd>:
 
 ```js
     "lint": "prettier --check . && eslint --ignore-path .gitignore .",
@@ -193,7 +193,7 @@ Para configurar o Husky basta inserir o seguinte comando:
 yarn husky install
 ```
 
-Agora insira isto no seu package.json
+Agora insira isto no seu <kbd>package.json</kbd>
 
 ```js
   "husky": {
