@@ -77,7 +77,7 @@ $ touch .eslintignore .prettierignore
 
 ### Populando os arquivos ignore
 
-Dentro de ambos arquivos .eslintignore e .prettierignore insira:
+Dentro de ambos arquivos <kbd>.eslintignore</kbd> e <kbd>.prettierignore</kbd> insira:
 
 ```bash
 
