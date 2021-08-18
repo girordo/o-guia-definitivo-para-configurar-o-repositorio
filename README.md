@@ -17,16 +17,15 @@
 
 ## Personal Note
 
- - Consertar o Husky
- - Adicionar lintstaged
- - Configurar novamente o Husky com lintstaged
- - Configurar path mapping
- - Configurar um com Typescript também
+- Ainda não acabei de configurar o path mapping
+- Configurar um com Typescript também
+- Ainda não sei se o lint-staged e o husky estão funcionando
 
 ## Abstract
 
 Resolvi fazer esse guia pois tô cansado de toda vez que vou começar um projeto(não uso boilerplate) ter que ficar
 garimpando todos os guias que conheço para deixar pronto, então farei tudo num único, espero que seja de ajuda a alguém!
+Eu sei que o CRA não é o melhor dos cenários, era melhor explicar usar o webpack e babel mas o negócio é ser rápido aqui
 
 ### Tecnologias
 
@@ -67,7 +66,9 @@ Com o projeto rodando vamos configurar agora o ESLint, Prettier, EditorConfig e 
 ```bash
 
 # Instalando o eslint, prettier e plugins
-$  yarn add -D eslint prettier eslint-plugin-react eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier eslint-plugin-jsx-a11y husky
+$  yarn add -D eslint prettier eslint-plugin-react eslint-plugin-react-hooks \
+    eslint-config-prettier eslint-plugin-prettier
+    eslint-plugin-jsx-a11y husky lint-staged react-app-rewired
 
 # Criando arquivos ignore
 $ touch .eslintignore .prettierignore
@@ -186,43 +187,27 @@ E muito provavelmente ele ficará assim:
 
 ### Configurando Husky
 
-Para configurar o Husky devemos criar uma pasta na raiz do repositório:
-
-```bash
-$ mkdir .husky
-```
-
-E dentro dessa pasta dois novos arquivos
-
-```bash
-
-$ cd .husky
-
-$ touch .gitignore pre-commit
-
-```
-
-Dentro do arquivo .gitignore insira:
-
-```gitignore
-_
-```
-
-E dentro do arquivo pre-commit insira:
-
-```sh
-
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-yarn lint
-```
-
-Logo após rode o comando:
+Para configurar o Husky basta inserir o seguinte comando:
 
 ```sh
 yarn husky install
 ```
+
+Agora insira isto no seu package.json
+
+```js
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+    }
+  }
+
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": ["yarn lint", "yarn format"]
+  }
+```
+
+### Configurando path mapping
 
 ### Configurando dockerfile e .dockerignore
 
