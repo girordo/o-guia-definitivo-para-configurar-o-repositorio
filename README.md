@@ -19,17 +19,19 @@
 
 - Ainda não acabei de configurar o path mapping
 - Configurar um com Typescript também
+- Configurar com NextJS
 - Ainda não sei se o lint-staged e o husky estão funcionando
 
 ## Abstract
 
 Resolvi fazer esse guia pois tô cansado de toda vez que vou começar um projeto(não uso boilerplate) ter que ficar
 garimpando todos os guias que conheço para deixar pronto, então farei tudo num único, espero que seja de ajuda a alguém!
-Eu sei que o CRA não é o melhor dos cenários, era melhor explicar usar o webpack e babel mas o negócio é ser rápido aqui
+Estou usando ViteJS daqui pra frente por ser muito mais rápido que o CRA e mais fácil.
 
 ### Tecnologias
 
 - <img src="https://github.com/girordo/geticon/blob/master/logos/react.svg" alt="React" width="28px" height="28px"/> React
+- <img src="https://github.com/girordo/geticon/blob/master/logos/vitejs.svg" alt="ViteJS" width="28px" height="28px" /> ViteJS
 - <img src="https://github.com/girordo/geticon/blob/master/logos/eslint.svg" alt="ESLint" width="28px" height="28px"/> ESLint
 - <img src="https://github.com/girordo/geticon/blob/master/logos/prettier.svg" alt="Prettier" width="28px" height="28px"/> Prettier
 - <img src="https://editorconfig.org/logo.png" alt="EditorConfig" width="28px" height="28px"> EditorConfig
