@@ -31,7 +31,8 @@ Estou usando ViteJS daqui pra frente por ser muito mais rápido que o CRA e mais
 ### Tecnologias
 
 - <img src="https://github.com/girordo/geticon/blob/master/logos/react.svg" alt="React" width="28px" height="28px"/> React
-- <img src="https://github.com/girordo/geticon/blob/master/logos/vitejs.svg" alt="ViteJS" width="28px" height="28px" /> ViteJS
+- <img src="https://camo.githubusercontent.com/61e102d7c605ff91efedb9d7e47c1c4a07cef59d3e1da202fd74f4772122ca4e/68747470733a2f2f766974656a732e6465762f6c6f676f2e737667" alt="ViteJS" width="28px" height="28px" /> ViteJS
+- <img src="https://github.com/girordo/geticon/blob/master/logos/yarn.svg" alt="Yarn" width="28px" height="28px"/> Yarn
 - <img src="https://github.com/girordo/geticon/blob/master/logos/eslint.svg" alt="ESLint" width="28px" height="28px"/> ESLint
 - <img src="https://github.com/girordo/geticon/blob/master/logos/prettier.svg" alt="Prettier" width="28px" height="28px"/> Prettier
 - <img src="https://editorconfig.org/logo.png" alt="EditorConfig" width="28px" height="28px"> EditorConfig
@@ -40,24 +41,48 @@ Estou usando ViteJS daqui pra frente por ser muito mais rápido que o CRA e mais
 
 ### Requisitos mínimos
 
-Primeiramente segundamente, você deve ter o Node instalado de preferência com [NVM](https://github.com/nvm-sh/nvm)
-Você deve ter instalado o [CRA](https://create-react-app.dev/docs/getting-started/) e o
+Primeiramente segundamente, você deve ter o Node instalado de preferência com [NVM](https://github.com/nvm-sh/nvm) e o
 [Docker](https://docs.docker.com/)(essa parte não vou explicar pois a documentação de ambos é bem completa).
 
 ## O guia
 
 Depois que você possuir tudo instalado que eu citei acima vamos as configurações:
 
+É possível criar com o ViteJS de três maneiras 👇🏻
+
+Com npm:
+
 ```bash
 
-# Rode o CRA
-$ create react-app meu-repo
+npm init vite@latest
 
-# Entre na pasta criada pelo CRA
-$ cd meu-repo
+```
 
-# Para rodar o projeto
-$ yarn start
+Com yarn:
+
+```bash
+
+yarn create vite
+
+```
+
+e por fim com pnpm:
+
+```bash
+
+pnpm create vite
+
+```
+
+Após o comando você terá um menu tipo esse:
+
+<img src="https://github.com/girordo/o-guia-definitivo-para-configurar-o-repositorio/blob/master/imgs/vite-menu.png" alt="Vite menu" />
+
+Depois de criado
+
+```bash
+
+cd nome-do-seu-repositorio
 
 ```
 
