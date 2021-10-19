@@ -76,7 +76,7 @@ pnpm create vite
 
 Após o comando você terá um menu tipo esse:
 
-<img src="https://github.com/girordo/o-guia-definitivo-para-configurar-o-repositorio/blob/master/imgs/vite-menu.png" alt="Vite menu" />
+<img src="https://github.com/girordo/o-guia-definitivo-para-configurar-o-repositorio/blob/main/imgs/vite-menu.png" alt="Vite menu" />
 
 Depois de criado
 
