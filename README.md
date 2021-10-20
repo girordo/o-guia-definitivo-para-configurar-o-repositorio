@@ -54,7 +54,7 @@ Com npm:
 
 ```bash
 
-npm init vite@latest
+npm init vite@latest nome-do-seu-repositorio
 
 ```
 
@@ -62,7 +62,7 @@ Com yarn:
 
 ```bash
 
-yarn create vite
+yarn create vite nome-do-seu-repositorio
 
 ```
 
@@ -70,7 +70,7 @@ e por fim com pnpm:
 
 ```bash
 
-pnpm create vite
+pnpm create vite nome-do-seu-repositorio
 
 ```
 
@@ -108,8 +108,12 @@ Dentro de ambos arquivos <kbd>.eslintignore</kbd> e <kbd>.prettierignore</kbd> i
 
 ```bash
 
-node_modules/
-build/
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+node_modules/*
 
 ```
 
