@@ -94,7 +94,7 @@ Com o projeto rodando vamos configurar agora o ESLint, Prettier, EditorConfig e 
 $  yarn add -D eslint prettier eslint-plugin-react eslint-plugin-react-hooks \
     eslint-config-prettier eslint-plugin-prettier \
     eslint-plugin-jsx-a11y eslint-plugin-simple-import-sort \
-    eslint-plugin-import
+    eslint-plugin-import prop-types
 
 
 # Criando arquivos ignore
@@ -201,12 +201,12 @@ Dentro do arquivo <kbd>.editorconfig</kbd> insira:
 root = true
 
 [*]
-indent_style = space
+indent_style = spaces
 indent_size = 2
 end_of_line = lf
 charset = utf-8
-trim_trailing_whitespace = false
-insert_final_newline = false
+trim_trailing_whitespace = true
+insert_final_newline = true
 ```
 
 ### Configurando os scripts no package.json
