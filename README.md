@@ -130,7 +130,15 @@ touch .eslintrc .prettierrc .editorconfig
 Dentro do arquivo <kbd>.prettierrc</kbd> insira:
 
 ```js
-
+module.exports = {
+  semi: true,
+  trailingComma: "all",
+  singleQuote: true,
+  printWidth: 80, //entre 80 e 90 é uma boa pedida
+  tabWidth: 2,
+  jsxBracketSameLine: true,
+  endOfLine: "auto",
+};
 ```
 
 ### Populando o .eslintrc
@@ -138,7 +146,51 @@ Dentro do arquivo <kbd>.prettierrc</kbd> insira:
 Dentro do arquivo <kbd>.eslintrc</kbd> insira:
 
 ```js
-
+module.exports = {
+  root: true,
+  //parser: '@typescript-eslint/parser', use somente se usar typescript
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+  env: {
+    browser: true,
+    amd: true,
+    node: true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+  ],
+  plugins: ["simple-import-sort", "prettier"],
+  rules: {
+    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/accessible-emoji": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off", //use apenas se usar typescript
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        components: ["Link"],
+        specialLink: ["hrefLeft", "hrefRight"],
+        aspects: ["invalidHref", "preferButton"],
+      },
+    ],
+  },
+};
 ```
 
 ### Populando o arquivo .editorconfig
