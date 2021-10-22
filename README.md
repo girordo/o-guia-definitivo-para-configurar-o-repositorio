@@ -20,7 +20,6 @@
 - Ainda não acabei de configurar o path mapping
 - Configurar um com Typescript também
 - Configurar com NextJS
-- Ainda não sei se o lint-staged e o husky estão funcionando
 
 ## Abstract
 
@@ -36,7 +35,6 @@ Estou usando ViteJS daqui pra frente por ser muito mais rápido que o CRA e mais
 - <img src="https://github.com/girordo/geticon/blob/master/logos/eslint.svg" alt="ESLint" width="28px" height="28px"/> ESLint
 - <img src="https://github.com/girordo/geticon/blob/master/logos/prettier.svg" alt="Prettier" width="28px" height="28px"/> Prettier
 - <img src="https://editorconfig.org/logo.png" alt="EditorConfig" width="28px" height="28px"> EditorConfig
-- <img src="https://www.pinclipart.com/picdir/big/565-5651740_wolf-emoji-clipart-wolf-emoji-transparent-background-png.png" alt="Husky" width="28px" height="28px"/> Husky
 - <img src="https://github.com/girordo/geticon/blob/master/logos/docker-icon.svg" alt="Docker" width="28px" height="28px"/> Docker
 
 ### Requisitos mínimos
@@ -94,8 +92,10 @@ Com o projeto rodando vamos configurar agora o ESLint, Prettier, EditorConfig e 
 
 # Instalando o eslint, prettier e plugins
 $  yarn add -D eslint prettier eslint-plugin-react eslint-plugin-react-hooks \
-    eslint-config-prettier eslint-plugin-prettier
-    eslint-plugin-jsx-a11y husky lint-staged react-app-rewired
+    eslint-config-prettier eslint-plugin-prettier \
+    eslint-plugin-jsx-a11y eslint-plugin-simple-import-sort \
+    eslint-plugin-import
+
 
 # Criando arquivos ignore
 $ touch .eslintignore .prettierignore
@@ -237,21 +237,15 @@ E muito provavelmente ele ficará assim:
 Para configurar o Husky basta inserir o seguinte comando:
 
 ```sh
-yarn husky install
+
+yarn add -D pre-commit
+
 ```
 
 Agora insira isto no seu <kbd>package.json</kbd>
 
 ```js
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-    }
-  }
-
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": ["yarn lint", "yarn format"]
-  }
+  "pre-commit": "lint",
 ```
 
 ### Configurando path mapping
@@ -271,8 +265,14 @@ $ touch Dockerfile .dockerignore
 No arquivo .dockerignore, insira:
 
 ```.dockerignore
-node_modules/
-build/
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+node_modules/*
+
 ```
 
 Após criar o Dockerfile vamos configura-lo:
@@ -290,7 +290,6 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 COPY yarn.lock ./
 RUN yarn install --silent
-RUN yarn add global react-scripts@4.0.3 --silent
 
 COPY . ./
 
