@@ -84,7 +84,7 @@ cd nome-do-seu-repositorio
 
 ```
 
-### Instalando as depedências necessárias
+### Instalando as dependências necessárias
 
 Com o projeto rodando vamos configurar agora o ESLint, Prettier, EditorConfig e Husky:
 
