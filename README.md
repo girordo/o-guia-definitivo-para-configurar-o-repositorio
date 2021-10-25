@@ -133,7 +133,7 @@ Dentro do arquivo <kbd>.prettierrc</kbd> insira:
 module.exports = {
   semi: true,
   trailingComma: "all",
-  singleQuote: true,
+  singleQuote: false, //eu prefiro sempre double quote ou seja false
   printWidth: 80, //entre 80 e 90 é uma boa pedida
   tabWidth: 2,
   jsxBracketSameLine: true,
@@ -178,7 +178,7 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "jsx-a11y/accessible-emoji": "off",
     "react/prop-types": "off",
-    "@typescript-eslint/explicit-function-return-type": "off", //use apenas se usar typescript
+    //"@typescript-eslint/explicit-function-return-type": "off", use apenas se usar typescript
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "jsx-a11y/anchor-is-valid": [
@@ -224,7 +224,7 @@ E muito provavelmente ele ficará assim:
 ```js
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
@@ -234,7 +234,7 @@ E muito provavelmente ele ficará assim:
 
 ### Configurando pre-commit
 
-Para configurar o Husky basta inserir o seguinte comando:
+Para configurar o pre-commit basta inserir o seguinte comando:
 
 ```sh
 
@@ -242,7 +242,7 @@ yarn add -D pre-commit
 
 ```
 
-Agora insira isto no seu <kbd>package.json</kbd>
+Agora insira isto no seu <kbd>package.json</kbd> abaixo de scripts
 
 ```js
   "pre-commit": "lint",
@@ -252,8 +252,7 @@ Agora insira isto no seu <kbd>package.json</kbd>
 
 ### Configurando dockerfile e .dockerignore
 
-Por último vamos configurar o Docker partindo do pressuposto que você já saiba o que é Docker, se não sabe não tem
-problema, volte duas casas.
+Por último vamos configurar o Docker partindo do pressuposto que você já saiba o que é Docker, se não sabe não tem problema, volte duas casas.
 
 ```bash
 
@@ -303,7 +302,7 @@ COPY --from=builder /app/build /usr/share/nginx/html
 
 ```
 
-### "Buildando" e rodando o projeto
+### Gerando build e rodando o projeto
 
 Basicamente na configuração acima você está criando uma imagem do seu projeto para o container e servindo ela
 na porta 3000 com o nginx.
