@@ -51,25 +51,19 @@ Depois que você possuir tudo instalado que eu citei acima vamos as configuraç�
 Com npm:
 
 ```bash
-
-npm init vite@latest nome-do-seu-repositorio
-
+$ npm init vite@latest nome-do-seu-repositorio
 ```
 
 Com yarn:
 
 ```bash
-
-yarn create vite nome-do-seu-repositorio
-
+$ yarn create vite nome-do-seu-repositorio
 ```
 
 e por fim com pnpm:
 
 ```bash
-
-pnpm create vite nome-do-seu-repositorio
-
+$ pnpm create vite nome-do-seu-repositorio
 ```
 
 Após o comando você terá um menu tipo esse:
@@ -79,27 +73,25 @@ Após o comando você terá um menu tipo esse:
 Depois de criado
 
 ```bash
-
-cd nome-do-seu-repositorio
-
+$ cd nome-do-seu-repositorio
 ```
 
 ### Instalando as dependências necessárias
 
-Com o projeto rodando vamos configurar agora o ESLint, Prettier, EditorConfig e Husky:
+Com o projeto rodando vamos configurar agora o ESLint, Prettier, EditorConfig:
 
 ```bash
-
 # Instalando o eslint, prettier e plugins
 $  yarn add -D eslint prettier eslint-plugin-react eslint-plugin-react-hooks \
     eslint-config-prettier eslint-plugin-prettier \
     eslint-plugin-jsx-a11y eslint-plugin-simple-import-sort \
     eslint-plugin-import prop-types
+```
 
+### Criando os arquivos ignore
 
-# Criando arquivos ignore
+```bash
 $ touch .eslintignore .prettierignore
-
 ```
 
 ### Populando os arquivos ignore
@@ -107,14 +99,12 @@ $ touch .eslintignore .prettierignore
 Dentro de ambos arquivos <kbd>.eslintignore</kbd> e <kbd>.prettierignore</kbd> insira:
 
 ```bash
-
 node_modules
 .DS_Store
 dist
 dist-ssr
 *.local
 node_modules/*
-
 ```
 
 ### Criando os arquivos de configuração do ESLint, Prettiere e EditorConfig
@@ -236,15 +226,13 @@ E muito provavelmente ele ficará assim:
 
 Para configurar o pre-commit basta inserir o seguinte comando:
 
-```sh
-
-yarn add -D pre-commit
-
+```bash
+$ yarn add -D pre-commit
 ```
 
 Agora insira isto no seu <kbd>package.json</kbd> abaixo de scripts
 
-```js
+```
   "pre-commit": "lint",
 ```
 
@@ -264,20 +252,17 @@ $ touch Dockerfile .dockerignore
 No arquivo .dockerignore, insira:
 
 ```.dockerignore
-
 node_modules
 .DS_Store
 dist
 dist-ssr
 *.local
 node_modules/*
-
 ```
 
 Após criar o Dockerfile vamos configura-lo:
 
 ```dockerfile
-
 FROM node:15-alpine AS development
 
 WORKDIR /app
@@ -299,7 +284,6 @@ RUN yarn run build
 FROM nginx:stable
 
 COPY --from=builder /app/build /usr/share/nginx/html
-
 ```
 
 ### Gerando build e rodando o projeto
@@ -311,11 +295,9 @@ na porta 3000 com o nginx.
 Depois disso você precisará gerar a build e depois rodar o projeto:
 
 ```bash
-
 # Docker build
 $ docker build -t meu-repo .
 
 # Docker run
 $ docker run -p 80:80 meu-repo
-
 ```
