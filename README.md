@@ -109,7 +109,7 @@ node_modules/*
 
 ### Criando os arquivos de configuração do ESLint, Prettiere e EditorConfig
 
-Crie os arquivos <kbd>.eslintrc</kbd>, <kbd>.prettierrc</kbd> e <kbd>.editorconfig</kbd>
+Crie os arquivos <kbd>.eslintrc.js</kbd>, <kbd>.prettierrc.js</kbd> e <kbd>.editorconfig</kbd>
 
 ```bash
 touch .eslintrc .prettierrc .editorconfig
@@ -133,7 +133,7 @@ module.exports = {
 
 ### Populando o .eslintrc
 
-Dentro do arquivo <kbd>.eslintrc</kbd> insira:
+Dentro do arquivo <kbd>.eslintrc.js</kbd> insira:
 
 ```js
 module.exports = {
