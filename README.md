@@ -126,7 +126,6 @@ module.exports = {
   singleQuote: false, //eu prefiro sempre double quote ou seja false
   printWidth: 80, //entre 80 e 90 é uma boa pedida
   tabWidth: 2,
-  jsxBracketSameLine: true,
   endOfLine: "auto",
 };
 ```
