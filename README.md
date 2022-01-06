@@ -123,8 +123,8 @@ Dentro do arquivo <kbd>.prettierrc</kbd> insira:
 {
   "semi": true,
   "trailingComma": "all",
-  "singleQuote": false, //eu prefiro sempre double quote ou seja false
-  "printWidth": 80, //entre 80 e 90 é uma boa pedida
+  "singleQuote": false,
+  "printWidth": 80,
   "tabWidth": 2,
   "endOfLine": "auto"
 }
