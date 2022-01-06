@@ -109,10 +109,10 @@ node_modules/*
 
 ### Criando os arquivos de configuração do ESLint, Prettiere e EditorConfig
 
-Crie os arquivos <kbd>.eslintrc.js</kbd>, <kbd>.prettierrc.js</kbd> e <kbd>.editorconfig</kbd>
+Crie os arquivos <kbd>.eslintrc.js</kbd>, <kbd>.prettierrc</kbd> e <kbd>.editorconfig</kbd>
 
 ```bash
-touch .eslintrc .prettierrc .editorconfig
+touch .eslintrc.js .prettierrc .editorconfig
 ```
 
 ### Populando o arquivo .prettierrc
