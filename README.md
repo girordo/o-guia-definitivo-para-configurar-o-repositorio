@@ -46,7 +46,7 @@ Primeiramente segundamente, você deve ter o Node instalado de preferência com 
 
 Depois que você possuir tudo instalado que eu citei acima vamos as configurações:
 
-É possível criar com o ViteJS de três maneiras 👇🏻
+É possível criar com o **ViteJS** de três maneiras 👇🏻
 
 Com npm:
 
@@ -69,6 +69,22 @@ $ pnpm create vite nome-do-seu-repositorio
 Após o comando você terá um menu tipo esse:
 
 <img src="https://github.com/girordo/o-guia-definitivo-para-configurar-o-repositorio/blob/main/imgs/vite-menu.png" alt="Vite menu" />
+
+Também podemos criar com **Next.JS** e pode ser tanto com o gerenciador NPM ou Yarn
+
+```bash
+$ npx create-next-app nome-do-seu-repositorio --use-npm
+```
+
+```bash
+$ yarn create-next-app nome-do-seu-repositorio
+```
+
+Também é possível passarmos uma flag -template para utilizar um template disponibilizado no [repositório](https://github.com/vercel/vercel/tree/main/examples) da própria vercel mesmo
+
+```bash
+$ npx create-next-app nome-do-seu-repositorio --use-npm -template exemplo-escolhido
+```
 
 Depois de criado
 
