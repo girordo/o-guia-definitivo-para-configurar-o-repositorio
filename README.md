@@ -81,7 +81,7 @@ $ npx create-next-app nome-do-seu-repositorio --use-npm
 $ yarn create-next-app nome-do-seu-repositorio
 ```
 
-Também é possível passarmos uma flag -template para utilizar um template disponibilizado no [repositório](https://github.com/vercel/vercel/tree/main/examples) da própria vercel mesmo
+Também é possível passarmos uma flag -template para utilizar um template disponibilizado no [repositório](https://github.com/vercel/next.js/tree/canary/examples) da própria vercel mesmo
 
 ```bash
 $ npx create-next-app nome-do-seu-repositorio --use-npm -template exemplo-escolhido
