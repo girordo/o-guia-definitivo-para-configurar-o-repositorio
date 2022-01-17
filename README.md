@@ -20,6 +20,7 @@
 - Ainda não acabei de configurar o path mapping
 - Configurar um com Typescript também
 - Comecei a configurar com Next.JS
+- Adicionar o Plop.js
 
 ## Abstract
 
