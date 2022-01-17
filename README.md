@@ -19,7 +19,7 @@
 
 - Ainda não acabei de configurar o path mapping
 - Configurar um com Typescript também
-- Configurar com NextJS
+- Comecei a configurar com Next.JS
 
 ## Abstract
 
