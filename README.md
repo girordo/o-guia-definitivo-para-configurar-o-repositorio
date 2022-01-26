@@ -1,6 +1,9 @@
 <div align="center">
 <img src="https://media.giphy.com/media/O5R3B0uGvCUBITMXjt/giphy.gif" loading=lazy width="20%" alt="French Bulldog" />
 <h6>Troquei por esse gif, ficou melhor</h6>
+<a href="https://gitmoji.dev">
+  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+</a>
 </div>
 <h1 align="center">O GUIA DEFINITIVO PARA CONFIGURAR O REPOSITÓRIO</h1>
 <p align="center">Todas as instruções que indico aqui são o que uso no meu dia como desenvolvedor</p>
